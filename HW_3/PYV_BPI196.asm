@@ -6,8 +6,9 @@ include 'win32a.inc'
 ;--------------------------------------------------------------------------
 section '.data' data readable writable
 
-        strNum            db 'Num = %u', 10, 0 ; num output message
-        strResult         db 'Calculated successfully! Num = %u, I = %d', 10, 0 ; result output message
+        strNum            db '%d : Num = %u', 10, 0 ; num output message
+        strResultNum      db 'The last number matching the criteria is %u', 10, 0 ; number output message
+        strResultParam    db 'Its parameter is %d', 10, 0 ; parameter output message
 
         num               dd 1
         i                 dd 1
@@ -55,11 +56,12 @@ endCalcLoop:
         ret
 ;--------------------------------------------------------------------------
 OutputNum:
-        cinvoke printf, strNum, [num] ; printf num variable
+        cinvoke printf, strNum,[i], [num] ; printf num and i variable
         ret
 ;--------------------------------------------------------------------------
 OutputResult:
-        cinvoke printf, strResult, [num], [i] ; printf num and i variable
+        cinvoke printf, strResultNum, [num] ; printf num
+        cinvoke printf, strResultParam, [i] ; printf i variable
         ret
 ;-------------------------------third act - including HeapApi--------------------------
                                                  
