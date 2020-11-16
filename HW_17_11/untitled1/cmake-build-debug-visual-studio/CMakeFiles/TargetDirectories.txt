@@ -1,0 +1,3 @@
+C:/Users/zod75/CLionProjects/untitled1/cmake-build-debug-visual-studio/CMakeFiles/untitled1.dir
+C:/Users/zod75/CLionProjects/untitled1/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
+C:/Users/zod75/CLionProjects/untitled1/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
