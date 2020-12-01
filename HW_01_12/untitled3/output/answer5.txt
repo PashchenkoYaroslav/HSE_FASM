@@ -1,0 +1,1 @@
+Share summa cannot be more than 1

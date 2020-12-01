@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -std=c++11 -fopenmp -g  -Wl,--enable-auto-import CMakeFiles/openmp_test_clion.dir/main.cpp.o  -o openmp_test_clion.exe -Wl,--out-implib,libopenmp_test_clion.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
