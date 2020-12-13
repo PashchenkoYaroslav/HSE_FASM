@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/untitled4/main.cpp
+iostream
+-
+vector
+-
+ctime
+-
+unistd.h
+-
+thread
+-
+sstream
+-
+
